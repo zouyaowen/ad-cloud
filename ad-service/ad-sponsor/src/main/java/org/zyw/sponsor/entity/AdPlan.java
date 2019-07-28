@@ -1,5 +1,8 @@
 package org.zyw.sponsor.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.zyw.sponsor.constant.CommonStatus;
 
 import javax.persistence.*;
@@ -11,6 +14,11 @@ import java.util.Date;
  * @Date: 0:56 2019/7/26
  * @Modifyed by:
  */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "ad_plan")
 public class AdPlan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

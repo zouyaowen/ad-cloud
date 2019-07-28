@@ -1,4 +1,4 @@
-package org.zyw.sponsor.entity.unitCondition;
+package org.zyw.sponsor.entity.popularize;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,31 +8,31 @@ import javax.persistence.*;
 
 /**
  * @Author: zouyaowen
- * @Description:
- * @Date: 1:41 2019/7/26
+ * @Description: 推广单元的维度：关键词
+ * @Date: 1:22 2019/7/26
  * @Modifyed by:
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "creative_unit")
-public class CreativeUnit {
+@Table(name = "ad_unit_keyword")
+public class AdUnitKeyword {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @Basic
-    @Column(name = "creative_id", nullable = false)
-    private Long creativeId;
-
-    @Basic
     @Column(name = "unit_id", nullable = false)
     private Long unitId;
 
-    public CreativeUnit(Long creativeId, Long unitId) {
-        this.creativeId = creativeId;
+    @Basic
+    @Column(name = "keyword", nullable = false)
+    private String keyword;
+
+    public AdUnitKeyword(Long unitId, String keyword) {
         this.unitId = unitId;
+        this.keyword = keyword;
     }
 }

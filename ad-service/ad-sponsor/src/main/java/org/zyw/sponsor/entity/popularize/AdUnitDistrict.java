@@ -1,4 +1,4 @@
-package org.zyw.sponsor.entity.unitCondition;
+package org.zyw.sponsor.entity.popularize;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

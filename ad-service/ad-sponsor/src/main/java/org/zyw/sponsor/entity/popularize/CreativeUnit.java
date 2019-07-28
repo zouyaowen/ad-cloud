@@ -1,4 +1,4 @@
-package org.zyw.sponsor.entity.unitCondition;
+package org.zyw.sponsor.entity.popularize;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,33 +8,31 @@ import javax.persistence.*;
 
 /**
  * @Author: zouyaowen
- * @Description: 推广单元限制维度：兴趣限制
- * @Date: 1:25 2019/7/26
+ * @Description:
+ * @Date: 1:41 2019/7/26
  * @Modifyed by:
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ad_unit_it")
-public class AdUnitIt {
-
+@Table(name = "creative_unit")
+public class CreativeUnit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
     @Basic
+    @Column(name = "creative_id", nullable = false)
+    private Long creativeId;
+
+    @Basic
     @Column(name = "unit_id", nullable = false)
     private Long unitId;
 
-    @Basic
-    @Column(name = "it_tag", nullable = false)
-    private String itTag;
-
-    public AdUnitIt(Long unitId, String itTag) {
+    public CreativeUnit(Long creativeId, Long unitId) {
+        this.creativeId = creativeId;
         this.unitId = unitId;
-        this.itTag = itTag;
     }
-
 }

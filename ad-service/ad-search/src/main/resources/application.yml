@@ -1,0 +1,50 @@
+server:
+  port: 7001
+  servlet:
+    context-path: /ad-search
+
+spring:
+  application:
+    name: eureka-client-ad-search
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.format_sql: true
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://139.224.118.117:8866/ad_data?autoReconnect=true
+    username: zouyaowen
+    password: zouyaowen@123
+    tomcat:
+      max-active: 4
+      min-idle: 2
+      initial-size: 2
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+adconf:
+  mysql:
+    host: 139.224.118.117
+    port: 8866
+    username: zouyaowen
+    password: zouyaowen@123
+    binlogName: binlog.000038
+    position: 60451
+
+  kafka:
+    topic: ad-search-mysql-data
