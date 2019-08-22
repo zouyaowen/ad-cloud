@@ -3,7 +3,7 @@ package org.zyw.sponsor.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import org.zyw.exception.AdException;
+import org.zyw.common.exception.AdException;
 import org.zyw.sponsor.constant.Constants;
 import org.zyw.sponsor.entity.AdPlan;
 import org.zyw.sponsor.entity.AdUnit;

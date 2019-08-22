@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-import org.zyw.annotation.IgnoreResponseAdvice;
+import org.zyw.common.annotation.IgnoreResponseAdvice;
 import org.zyw.search.client.vo.AdPlan;
 import org.zyw.search.client.vo.AdPlanGetRequest;
 import org.zyw.search.feign.SponsorClient;
-import org.zyw.vo.CommonResponse;
+import org.zyw.common.vo.CommonResponse;
 
 import java.util.List;
 

@@ -14,14 +14,15 @@ spring:
       hibernate.format_sql: true
     open-in-view: false
   datasource:
-    url: jdbc:mysql://139.224.118.117:8866/ad_data?autoReconnect=true
-    username: zouyaowen
-    password: zouyaowen@123
+    url: jdbc:mysql://127.0.0.1:3306/ad_data?autoReconnect=true&useUnicode=true&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
     tomcat:
       max-active: 4
       min-idle: 2
       initial-size: 2
-
+      test-on-borrow: true
 eureka:
   client:
     service-url:

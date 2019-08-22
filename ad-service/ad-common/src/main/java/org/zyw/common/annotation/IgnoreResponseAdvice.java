@@ -1,4 +1,4 @@
-package org.zyw.annotation;
+package org.zyw.common.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

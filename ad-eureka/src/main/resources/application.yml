@@ -16,3 +16,8 @@ eureka:
     #注册中心查询和注册地址
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    #关闭自我保护
+    enable-self-preservation: false
+    #5秒
+    eviction-interval-timer-in-ms: 5000

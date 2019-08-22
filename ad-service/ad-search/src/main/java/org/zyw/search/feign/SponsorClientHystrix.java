@@ -3,7 +3,7 @@ package org.zyw.search.feign;
 import org.springframework.stereotype.Component;
 import org.zyw.search.client.vo.AdPlan;
 import org.zyw.search.client.vo.AdPlanGetRequest;
-import org.zyw.vo.CommonResponse;
+import org.zyw.common.vo.CommonResponse;
 
 import java.util.List;
 

@@ -14,14 +14,31 @@ spring:
       hibernate.format_sql: true
     open-in-view: false
   datasource:
-    url: jdbc:mysql://139.224.118.117:3306/ad_data?autoReconnect=true
-    username: zouyaowen
-    password: zouyaowen@123
+    url: jdbc:mysql://127.0.0.1:3306/ad_data?autoReconnect=true&useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    maxLifetime: 120000
+    connectionTimeout: 30000
     tomcat:
-      max-active: 4
+      max-wait: 10000
+      max-active: 10
       min-idle: 2
+      test-on-borrow: true
       initial-size: 2
-
+#  druid:
+#    url: jdbc:mysql://139.224.118.117:8866/ad_data?autoReconnect=true&useUnicode=true&useSSL=false
+#    username: zouyaowen
+#    password: zouyaowen@123
+#    driverClassName: com.mysql.jdbc.Driver
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 20
+#    maxWait: 10000
+#    timeBetweenEvictionRunsMillis: 60000
+#    minEvictableIdleTimeMillis: 300000
+#    validationQuery: SELECT 1 FROM DUAL
+#    testWhileIdle: true
 eureka:
   client:
     service-url:

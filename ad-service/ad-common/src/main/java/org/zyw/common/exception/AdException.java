@@ -1,4 +1,4 @@
-package org.zyw.exception;
+package org.zyw.common.exception;
 
 /**
  * @Author: zouyaowen

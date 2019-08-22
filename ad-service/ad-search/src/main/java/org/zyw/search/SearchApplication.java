@@ -24,6 +24,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 public class SearchApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SearchApplication.class,args);
+        SpringApplication.run(SearchApplication.class, args);
     }
 }

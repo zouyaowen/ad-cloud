@@ -8,13 +8,13 @@ use ad_data;
 -- 用户表
 CREATE TABLE `ad_user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '自增主键',
-  `username` varchar(128) NOT NULL DEFAULT '' COMMENT '用户名',
+  `user_name` varchar(128) NOT NULL DEFAULT '' COMMENT '用户名',
   `token` varchar(256) NOT NULL DEFAULT '' COMMENT '给用户生成的 token',
   `user_status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '用户状态',
   `create_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '创建时间',
   `update_time` datetime NOT NULL DEFAULT '1970-01-01 00:00:00' COMMENT '更新时间',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`)
+  UNIQUE KEY `user_name` (`user_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COMMENT='用户信息表';
 
 

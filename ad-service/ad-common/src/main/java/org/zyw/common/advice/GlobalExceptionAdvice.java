@@ -1,9 +1,9 @@
-package org.zyw.advice;
+package org.zyw.common.advice;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import org.zyw.exception.AdException;
-import org.zyw.vo.CommonResponse;
+import org.zyw.common.exception.AdException;
+import org.zyw.common.vo.CommonResponse;
 
 import javax.servlet.http.HttpServletRequest;
 

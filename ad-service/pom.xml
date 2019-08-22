@@ -21,6 +21,13 @@
     <name>ad-service</name>
     <description>服务统一父工程</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.19</version>
+        </dependency>
+    </dependencies>
 
 
 

@@ -4,9 +4,9 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.zyw.search.client.vo.AdPlan;
 import org.zyw.search.client.vo.AdPlanGetRequest;
-import org.zyw.vo.CommonResponse;
+import org.zyw.search.client.vo.AdPlan;
+import org.zyw.common.vo.CommonResponse;
 
 import java.util.List;
 

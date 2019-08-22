@@ -1,7 +1,6 @@
 package org.zyw.sponsor.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.zyw.sponsor.entity.AdPlan;
 import org.zyw.sponsor.entity.AdUnit;
 
 import java.util.List;

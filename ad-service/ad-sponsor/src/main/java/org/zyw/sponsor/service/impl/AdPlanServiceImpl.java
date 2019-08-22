@@ -3,7 +3,7 @@ package org.zyw.sponsor.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.zyw.exception.AdException;
+import org.zyw.common.exception.AdException;
 import org.zyw.sponsor.constant.CommonStatus;
 import org.zyw.sponsor.constant.Constants;
 import org.zyw.sponsor.entity.AdPlan;
@@ -78,7 +78,6 @@ public class AdPlanServiceImpl implements IAdPlanService {
         if (plan == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
         }
-
         if (adPlanRequest.getPlanName() != null) {
             plan.setPlanName(adPlanRequest.getPlanName());
         }

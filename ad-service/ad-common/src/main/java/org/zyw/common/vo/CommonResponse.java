@@ -1,4 +1,4 @@
-package org.zyw.vo;
+package org.zyw.common.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

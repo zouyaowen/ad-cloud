@@ -2,7 +2,7 @@ package org.zyw.sponsor.util;
 
 import org.apache.commons.lang.time.DateUtils;
 import org.springframework.util.DigestUtils;
-import org.zyw.exception.AdException;
+import org.zyw.common.exception.AdException;
 
 import java.text.ParseException;
 import java.util.Date;
