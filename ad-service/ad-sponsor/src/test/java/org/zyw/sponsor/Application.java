@@ -1,19 +1,17 @@
-package org.zyw.eureka;
+package org.zyw.sponsor;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @Author: zouyaowen
  * @Description:
- * @Date: 1:58 2019/7/26
+ * @Date: 0:33 2019/8/29
  * @Modifyed by:
  */
 @SpringBootApplication
-@EnableEurekaServer
-public class EurekaApplication {
+public class Application {
     public static void main(String[] args) {
-        SpringApplication.run(EurekaApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }

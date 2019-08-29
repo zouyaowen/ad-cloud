@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.zyw.common.annotation.IgnoreResponseAdvice;
+import org.zyw.common.vo.CommonResponse;
 import org.zyw.search.client.vo.AdPlan;
 import org.zyw.search.client.vo.AdPlanGetRequest;
 import org.zyw.search.feign.SponsorClient;
-import org.zyw.common.vo.CommonResponse;
 
 import java.util.List;
 
@@ -48,7 +48,7 @@ public class SearchController {
     public CommonResponse getAdPlansByRebbon(@RequestBody AdPlanGetRequest request){
         log.info("ad-search:getAdPlanByRebbon->{}", JSON.toJSONString(request));
         return restTemplate.postForEntity(
-                "http://eureka-client-ad-sponsor/get/adPlan",
+                "http://eureka-client-ad-sponsor/ad-sponsor/get/adPlan",
                 request,
                 CommonResponse.class
         ).getBody();
