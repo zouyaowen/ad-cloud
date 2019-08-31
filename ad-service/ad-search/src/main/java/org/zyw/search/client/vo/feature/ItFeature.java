@@ -13,6 +13,5 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ItFeature {
-
     private List<String> its;
 }

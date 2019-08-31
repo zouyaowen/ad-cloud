@@ -38,14 +38,14 @@ management:
       exposure:
         include: "*"
 
-#adconf:
-#  mysql:
-#    host: 127.0.0.1
-#    port: 8866
-#    username: zouyaowen
-#    password: zouyaowen@123
-#    binlogName: binlog.000038
-#    position: 60451
+adconf:
+  mysql:
+    host: 127.0.0.1
+    port: 3306
+    username: root
+    password: 123456
+    binlogName: binlog.000038
+    position: 60451
 #
 #  kafka:
 #    topic: ad-search-mysql-data

@@ -17,6 +17,9 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 public class AdPlanIndex implements IndexAware<Long, AdPlanObject> {
 
+    /**
+     * 推广计划唯一标识到推广计划详情
+     */
     private static Map<Long, AdPlanObject> objectMap;
 
     static {
